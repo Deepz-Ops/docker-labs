@@ -1,0 +1,27 @@
+{
+    "name": "product-api",
+    "version": "1.0.0",
+    "description": "Product API for Docker optimization task",
+    "main": "src/app.js",
+    "scripts": {
+        "start": "node src/app.js",
+        "dev": "nodemon src/app.js",
+        "test": "jest"
+    },
+    "keywords": [
+        "docker",
+        "optimization",
+        "api"
+    ],
+    "author": "Docker Labs",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.18.2",
+        "compression": "^1.7.4",
+        "helmet": "^7.1.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.2",
+        "jest": "^29.7.0"
+    }
+}
