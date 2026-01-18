@@ -38,11 +38,3 @@ Create a local development environment for our web application that includes a d
 - Data persists after `docker compose down` and `up`
 - Environment variables properly configured
 
-## Testing
-```bash
-docker compose up -d
-curl http://localhost:3000  # Frontend
-curl http://localhost:5000/api/users  # Backend
-docker compose down
-docker compose up -d  # Data should persist
-```

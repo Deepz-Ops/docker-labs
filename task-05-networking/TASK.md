@@ -33,10 +33,3 @@ We have a microservices application where services need to communicate securely 
 - Other services cannot be reached directly from host
 - Services communicate using container names
 
-## Testing
-```bash
-docker compose up -d
-curl http://localhost:8080/users  # Should work
-curl http://localhost:8081/users  # Should fail (port not exposed)
-docker compose exec api-gateway curl http://user-service:8081/users  # Should work
-```

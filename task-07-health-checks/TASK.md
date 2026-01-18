@@ -26,17 +26,3 @@ Our API service occasionally becomes unresponsive. Implement health checks to au
 - No false positives during startup
 - Graceful shutdown on container stop
 
-## Testing
-```bash
-# Start with health checks
-docker compose up -d
-
-# Check health status
-docker compose ps
-
-# Simulate failure (kill the app process inside container)
-docker compose exec app pkill -9 python
-
-# Watch container restart
-docker compose ps
-```

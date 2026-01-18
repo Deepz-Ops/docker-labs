@@ -31,9 +31,3 @@ Our Node.js application Docker image is 1.2GB. This is too large for our deploym
 - Application runs identically
 - Build time is reasonable (under 5 minutes)
 
-## Hints
-- Use multi-stage builds
-- Consider using alpine base images
-- Remove development dependencies
-- Use .dockerignore
-- Only copy necessary files to final stage

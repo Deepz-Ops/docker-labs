@@ -31,10 +31,3 @@ A junior developer created a Dockerfile for a Node.js application, but the conta
 - Application is accessible at http://localhost:3000
 - All issues documented with explanations
 
-## Common Issues to Look For
-- Missing dependencies
-- Incorrect file paths
-- Wrong base image
-- Missing EXPOSE or CMD
-- Permission issues
-- Port mismatches

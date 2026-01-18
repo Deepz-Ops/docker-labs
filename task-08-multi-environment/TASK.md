@@ -28,14 +28,3 @@ Deploy the same application to development, staging, and production with differe
 - Secrets are not hardcoded
 - Resource limits applied in production
 
-## Commands
-```bash
-# Development
-docker compose -f docker-compose.yml -f docker-compose.dev.yml up
-
-# Staging
-docker compose -f docker-compose.yml -f docker-compose.staging.yml up
-
-# Production
-docker compose -f docker-compose.yml -f docker-compose.prod.yml up
-```
