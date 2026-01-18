@@ -16,7 +16,7 @@
                              │
             ┌────────────────┼────────────────┐
             │                │                │
-    ┌───────▼──────┐  ┌─────▼──────┐  ┌─────▼──────┐
+    ┌───────▼──────┐  ┌──────▼──────┐  ┌──────▼─────┐
     │ User Service │  │Order Service│  │   Backend  │
     │ (Port 8081)  │  │ (Port 8082) │  │   Network  │
     │  (Internal)  │  │  (Internal) │  │            │
@@ -32,26 +32,6 @@
 - API Gateway: 8080 (exposed to host)
 - User Service: 8081 (internal only)
 - Order Service: 8082 (internal only)
-
-## Testing Network Isolation
-
-### Test 1: Gateway Accessible from Host
-```bash
-curl http://localhost:8080
-# Expected: Success
-```
-
-### Test 2: Services NOT Accessible from Host
-```bash
-curl http://localhost:8081/users
-# Expected: Connection refused
-```
-
-### Test 3: Inter-Service Communication
-```bash
-docker compose exec api-gateway curl http://user-service:8081/users
-# Expected: Success
-```
 
 ## Docker Compose Configuration
 

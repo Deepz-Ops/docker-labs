@@ -22,14 +22,6 @@
 # Your fixed Dockerfile should be in the root of task-02-debug-container/
 ```
 
-## Testing
-```bash
-# Commands used to test
-docker build -t user-api .
-docker run -p 3000:3000 user-api
-curl http://localhost:3000
-```
-
 ## Screenshots
 - [ ] Build success
 - [ ] Container running

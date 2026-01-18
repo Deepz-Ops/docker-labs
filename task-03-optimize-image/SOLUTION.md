@@ -3,18 +3,10 @@
 ## Image Size Comparison
 
 ### Before Optimization
-```bash
-# Add docker images output showing unoptimized image
-REPOSITORY    TAG       SIZE
-product-api   old       1.2GB
-```
+- Size: ___GB
 
 ### After Optimization
-```bash
-# Add docker images output showing optimized image
-REPOSITORY    TAG       SIZE
-product-api   new       ???MB
-```
+- Size: ___MB
 
 ## Optimization Techniques Used
 
@@ -41,18 +33,6 @@ product-api   new       ???MB
 ## Final Dockerfile
 ```dockerfile
 # Your optimized Dockerfile here
-```
-
-## Build and Test Commands
-```bash
-# Unoptimized
-docker build -f unoptimized-dockerfile/Dockerfile -t product-api:old .
-
-# Optimized
-docker build -t product-api:new .
-
-# Compare sizes
-docker images | grep product-api
 ```
 
 ## Results
